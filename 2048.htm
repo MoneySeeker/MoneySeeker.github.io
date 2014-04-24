@@ -1,0 +1,117 @@
+﻿<!DOCTYPE HTML>
+<!-- saved from url=(0038)http://gabrielecirulli.github.io/2048/ -->
+<!DOCTYPE html PUBLIC "" ""><HTML lang="en" 
+manifest="cache.appcache"><HEAD><META content="IE=11.0000" 
+http-equiv="X-UA-Compatible">
+   
+<META charset="utf-8">   <TITLE>2048</TITLE>   <LINK href="2048_files/main.css" 
+rel="stylesheet" type="text/css">   <LINK href="favicon.ico" 
+rel="shortcut icon">   <LINK href="meta/apple-touch-icon.png" rel="apple-touch-icon"> 
+  
+<META name="apple-mobile-web-app-capable" content="yes">   
+<META name="apple-mobile-web-app-status-bar-style" content="black-translucent">  
+ 
+<META name="HandheldFriendly" content="True">   
+<META name="MobileOptimized" content="320">   
+<META name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui"> 
+  
+<META content="2048 game" property="og:title">   
+<META content="2048 game" property="og:site_name">   
+<META content="Join the numbers and get to the 2048 tile! Careful: this game is extremely addictive!" 
+property="og:description">   
+<META content="http://gabrielecirulli.github.io/2048/meta/og_image.png" 
+property="og:image"> 
+<META name="GENERATOR" content="MSHTML 11.00.9600.16476"></HEAD> 
+<BODY>
+<DIV class="container">
+<DIV class="heading">
+<H1 class="title">2048</H1>
+<DIV class="scores-container">
+<DIV class="score-container">0</DIV>
+<DIV class="best-container">0</DIV></DIV></DIV>
+<DIV class="above-game">
+<P class="game-intro">Join the numbers and get to the <STRONG>2048 
+tile!</STRONG></P><A class="restart-button">New Game</A></DIV>
+<DIV class="game-container">
+<DIV class="game-message">
+<P></P>
+<DIV class="lower"><A class="keep-playing-button">Keep going</A>           <A 
+class="retry-button">Try again</A>           
+<DIV class="score-sharing"></DIV></DIV></DIV>
+<DIV class="grid-container">
+<DIV class="grid-row">
+<DIV class="grid-cell"></DIV>
+<DIV class="grid-cell"></DIV>
+<DIV class="grid-cell"></DIV>
+<DIV class="grid-cell"></DIV></DIV>
+<DIV class="grid-row">
+<DIV class="grid-cell"></DIV>
+<DIV class="grid-cell"></DIV>
+<DIV class="grid-cell"></DIV>
+<DIV class="grid-cell"></DIV></DIV>
+<DIV class="grid-row">
+<DIV class="grid-cell"></DIV>
+<DIV class="grid-cell"></DIV>
+<DIV class="grid-cell"></DIV>
+<DIV class="grid-cell"></DIV></DIV>
+<DIV class="grid-row">
+<DIV class="grid-cell"></DIV>
+<DIV class="grid-cell"></DIV>
+<DIV class="grid-cell"></DIV>
+<DIV class="grid-cell"></DIV></DIV></DIV>
+<DIV class="tile-container"></DIV></DIV>
+<P class="game-explanation"><STRONG class="important">How to play:</STRONG> Use 
+your <STRONG>arrow keys</STRONG> to move the tiles. When two tiles with the same 
+number touch, they <STRONG>merge into one!</STRONG>     </P>
+<HR>
+
+<P><STRONG class="important">Note:</STRONG> This site is the official version of 
+2048. You can play it on your phone via <A 
+href="http://git.io/2048">http://git.io/2048</A> All other apps or sites are 
+derivatives or fakes, and should be used with caution.     </P>
+<HR>
+
+<P>    Created by <A href="http://gabrielecirulli.com/" target="_blank">Gabriele 
+Cirulli.</A> Based on <A href="https://itunes.apple.com/us/app/1024!/id823499224" 
+target="_blank">1024 by Veewo Studio</A> and conceptually similar to <A href="http://asherv.com/threes/" 
+target="_blank">Threes by Asher Vollmer.</A>     </P>
+<DIV class="sharing"><A class="twitter-share-button" href="https://twitter.com/share" 
+data-counturl="http://gabrielecirulli.github.io/2048/" data-url="http://git.io/2048" 
+data-via="gabrielecirulli" data-text="Check out 2048, a game where you join numbers to score high! #2048game">Tweet</A> 
+      
+<SCRIPT>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</SCRIPT>
+       
+<FORM class="pp-donate" action="https://www.paypal.com/cgi-bin/webscr" method="post" 
+target="_blank"><INPUT name="cmd" type="hidden" value="_s-xclick">         
+<INPUT name="hosted_button_id" type="hidden" value="NVNPJLTBZ8AME">         
+<BUTTON name="submit"><IMG src="2048_files/icon_pp.svg">Donate</BUTTON>         
+<IMG width="1" height="1" alt="" src="2048_files/pixel.gif" border="0">       
+</FORM><SPAN class="btc-donate"><A href="bitcoin:1Ec6onfsQmoP9kkL3zkpB6c5sA4PVcXU2i"><IMG 
+src="2048_files/icon_bitcoin.svg">Donate BTC         </A>         <SPAN class="address"><CODE>1Ec6onfsQmoP9kkL3zkpB6c5sA4PVcXU2i</CODE></SPAN> 
+      </SPAN></DIV></DIV>
+<SCRIPT src="2048_files/animframe_polyfill.js"></SCRIPT>
+   
+<SCRIPT src="2048_files/keyboard_input_manager.js"></SCRIPT>
+   
+<SCRIPT src="2048_files/html_actuator.js"></SCRIPT>
+   
+<SCRIPT src="2048_files/grid.js"></SCRIPT>
+   
+<SCRIPT src="2048_files/tile.js"></SCRIPT>
+   
+<SCRIPT src="2048_files/local_storage_manager.js"></SCRIPT>
+   
+<SCRIPT src="2048_files/game_manager.js"></SCRIPT>
+   
+<SCRIPT src="2048_files/application.js"></SCRIPT>
+   
+<SCRIPT>
+    (function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,"script","//www.google-analytics.com/analytics.js","ga");
+
+    ga("create", "UA-42620757-2", "gabrielecirulli.github.io");
+    ga("send", "pageview");
+  </SCRIPT>
+ </BODY></HTML>
