@@ -173,7 +173,7 @@ GameManager.prototype.move = function (direction) {
           // Update the score
 
          // self.score += merged*100.value;
-         self.score += merged*100.value;
+         self.score += (merged.value*100);
 
           // The mighty 2048 tile
           if (merged.value === 2048) self.won = true;
